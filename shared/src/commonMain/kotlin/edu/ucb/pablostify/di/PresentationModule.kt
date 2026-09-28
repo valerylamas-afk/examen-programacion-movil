@@ -8,6 +8,8 @@ import edu.ucb.pablostify.register.presentation.viewmodel.RegisterViewModel
 import edu.ucb.pablostify.userinformation.presentation.viewmodel.UserInformationViewModel
 import org.koin.core.module.dsl.viewModelOf
 import org.koin.dsl.module
+import edu.ucb.pablostify.earthquake.presentation.viewmodel.EarthquakeViewModel
+import org.koin.core.module.dsl.viewModelOf
 
 val presentationModule = module {
     viewModelOf(::LoginViewModel)
@@ -16,4 +18,5 @@ val presentationModule = module {
     viewModelOf(::MovieDetailViewModel)
     viewModelOf(::ProfileViewModel)
     viewModelOf(::UserInformationViewModel)
+    viewModelOf(::EarthquakeViewModel)
 }

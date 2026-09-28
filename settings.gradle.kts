@@ -1,4 +1,4 @@
-rootProject.name = "Pablostify"
+rootProject.name = "EarthquakeApp"
 
 pluginManagement {
     repositories {

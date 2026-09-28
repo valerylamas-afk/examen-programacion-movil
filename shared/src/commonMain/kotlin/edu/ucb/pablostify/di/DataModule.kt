@@ -15,6 +15,8 @@ import edu.ucb.pablostify.userinformation.data.repository.GithubRepositoryImpl
 import edu.ucb.pablostify.userinformation.data.service.GitHubApiService
 import edu.ucb.pablostify.userinformation.domain.repository.GithubRepository
 import org.koin.dsl.module
+import edu.ucb.pablostify.earthquake.data.EarthquakeRepositoryImpl
+import edu.ucb.pablostify.earthquake.domain.repository.EarthquakeRepository
 
 val dataModule = module {
 
@@ -44,5 +46,8 @@ val dataModule = module {
 
     single<GithubRepository> {
         GithubRepositoryImpl(get())
+    }
+    single<EarthquakeRepository> {
+        EarthquakeRepositoryImpl()
     }
 }

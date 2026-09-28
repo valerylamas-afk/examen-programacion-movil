@@ -10,7 +10,7 @@ import edu.ucb.pablostify.register.domain.usecase.RegisterUseCase
 import edu.ucb.pablostify.userinformation.domain.usecase.FindAliasUseCase
 import org.koin.core.module.dsl.singleOf
 import org.koin.dsl.module
-
+import edu.ucb.pablostify.earthquake.domain.usecase.GetEarthquakesUseCase
 val domainModule = module {
     singleOf(::LoginUseCase)
     singleOf(::RegisterUseCase)
@@ -20,4 +20,5 @@ val domainModule = module {
     singleOf(::GetProfileUseCase)
     singleOf(::LogoutUseCase)
     singleOf(::FindAliasUseCase)
+    singleOf(::GetEarthquakesUseCase)
 }
